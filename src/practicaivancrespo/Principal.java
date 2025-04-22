@@ -1,5 +1,6 @@
 package practicaivancrespo;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class Principal {
@@ -22,6 +23,9 @@ return;
 		
 		CalculosMatematicos misCalculosMatematicos = new CalculosMatematicos();
                     misCalculosMatematicos.calculosRefactorizados(numero);
+                    Random r = new Random();
+int numAleatorio = r.nextInt(numero)+1;
+new CalculosMatematicos().calcularMCD(numero, numAleatorio);
 
 	}
 
