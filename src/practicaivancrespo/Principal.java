@@ -1,4 +1,4 @@
-package practica;
+package practicaivancrespo;
 
 import java.util.Scanner;
 
@@ -20,7 +20,8 @@ return;
 }
 
 		
-		new CalculosMatematicos().calculos(numero);
+		CalculosMatematicos misCalculosMatematicos = new CalculosMatematicos();
+                    misCalculosMatematicos.calculosRefactorizados(numero);
 
 	}
 
