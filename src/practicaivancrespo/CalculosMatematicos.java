@@ -1,14 +1,19 @@
 package practicaivancrespo;
 
 import java.util.ArrayList;
-
+/**
+ * Clase que contiene operaciones matemáticas como factorización y cálculo del MCD.
+ */
 public class CalculosMatematicos {
 	
 	public CalculosMatematicos() {		
 	}
 
-<<<<<<< HEAD
-=======
+/**
+     * Calcula el MCD de dos números usando el algoritmo de Euclides.
+     * @param numA Primer número
+     * @param numB Segundo número
+     */
         public void calcularMCD(int numA, int numB) {
 int a = numA, b = numB;
 while (b != 0) {
@@ -19,7 +24,10 @@ a = temp;
 System.out.println("El máximo común divisor de "+numA+ " y "+numB+" es " + a);
 }
 
->>>>>>> RamaMCD
+  /**
+     * Realiza la descomposición en factores primos.
+     * @param numero Número a descomponer
+     */
 	public void calculosRefactorizados(int numero) {
 		
 		
@@ -27,10 +35,7 @@ System.out.println("El máximo común divisor de "+numA+ " y "+numB+" es " + a);
 		ArrayList<Integer> miArray = new ArrayList();
 		boolean noEsPrimo = false;
 		int j = 0;
-<<<<<<< HEAD
-=======
-	
->>>>>>> RamaMCD
+
 		
 		//Añadimos el 1
 		miArray.add(1);
@@ -45,7 +50,11 @@ System.out.println("El máximo común divisor de "+numA+ " y "+numB+" es " + a);
 			System.out.println("El número "+numero+ " NO es primo");
 		} else System.out.println("El número "+numero+ " SI es primo");
 	}			
-
+/**
+     * Verifica si un número es primo.
+     * @param numero Número a verificar
+     * @return true si es primo, false en caso contrario
+     */
     private boolean comprobarPrimo(int numero, boolean noEsPrimo) {
         for (int  i = 2; i< numero ; i++) {
             noEsPrimo = false;
