@@ -11,7 +11,14 @@ public class Principal {
 		
 		System.out.println("Introduzca el número sobre el que hacer los cálculos");
 		
-		int numero = sc.nextInt();
+		int numero;
+try {
+numero = sc.nextInt();
+}catch (Exception e){
+System.out.println("El dato introducido no es un número");
+return;
+}
+
 		
 		new CalculosMatematicos().calculos(numero);
 
